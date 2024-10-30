@@ -30,11 +30,10 @@ namespace Pomodoro
         }
 
 
-        private void buttonStart_Click(object sender, EventArgs e)
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            InitializeCountdown(1500); // Запуск таймера на 60 секунд по нажатию кнопки
+            InitializeCountdown(6);
         }
-
         private void InitializeCountdown(int seconds)
         {
             timeLeft = seconds;
@@ -55,7 +54,7 @@ namespace Pomodoro
             {
                 PlaySound();
                 timer1.Stop();
-                MessageBox.Show("Время вышло!");
+                MessageBox.Show(new Form { TopMost = true }, "Время вышло!");
             }
         }
 
@@ -106,5 +105,14 @@ namespace Pomodoro
             }
         }
 
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
