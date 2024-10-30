@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             buttonStart = new Button();
@@ -38,7 +39,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(102, 110);
+            label1.Location = new Point(105, 110);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 0;
@@ -46,11 +47,12 @@
             // 
             // buttonStart
             // 
-            buttonStart.Location = new Point(87, 263);
+            buttonStart.FlatStyle = FlatStyle.System;
+            buttonStart.Location = new Point(90, 270);
             buttonStart.Name = "buttonStart";
-            buttonStart.Size = new Size(75, 23);
+            buttonStart.Size = new Size(70, 25);
             buttonStart.TabIndex = 1;
-            buttonStart.Text = "button1";
+            buttonStart.Text = "START";
             buttonStart.UseVisualStyleBackColor = true;
             buttonStart.Click += buttonStart_Click;
             // 
@@ -66,6 +68,7 @@
             ClientSize = new Size(244, 341);
             Controls.Add(buttonStart);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);

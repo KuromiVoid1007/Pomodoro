@@ -32,7 +32,7 @@ namespace Pomodoro
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            InitializeCountdown(2); // Запуск таймера на 60 секунд по нажатию кнопки
+            InitializeCountdown(1500); // Запуск таймера на 60 секунд по нажатию кнопки
         }
 
         private void InitializeCountdown(int seconds)
