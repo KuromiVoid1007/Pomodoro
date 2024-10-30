@@ -32,7 +32,7 @@ namespace Pomodoro
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            InitializeCountdown(6);
+            InitializeCountdown(1500);
         }
         private void InitializeCountdown(int seconds)
         {
